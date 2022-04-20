@@ -6,104 +6,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifting</title>
-    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7804516940.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="headerLogo">
-            <a href="../index.html">
-                <img src="../assets/images/logo.png" alt="Logo Tienda de Belleza">
-            </a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
 
-        <div class="headerTitle">
-            <h1 class="headerTitle1">Tienda de Belleza</h1>
-            <h2 class="headerTitle2">Estética Integral</h2>
-        </div>
-
-        <nav class="headerNav">
-            <ul>
-                <li><a href="../index.html"> Inicio</a></li>
-                <li><a href="sobremi.html"> Sobre mí</a></li>
-                <li><a href="servicios.html">Servicios</a>
-                    <ul>
-                        <li><a href="tratamientosfaciales.html">Tratamientos faciales</a></li>
-                        <li><a href="lifting.html">Lifting de pestañas</a></li>
-                        <li><a href="maquillaje.html">Maquillaje</a></li>
-                        <li><a href="manicuriaypedicuria.html">Manicuría y pedicuría</a></li>
+            
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/images/logo.png" alt="Logo Tienda de belleza"
+                        class="d-inline-block align-text-top">
+                        <div>Tienda de Belleza</div>
+                </a>
+                
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sobremi.html">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/tratamientosfaciales.html">Tratamientos
+                                        Faciales</a></li>
+                                <li><a class="dropdown-item" href="../pages/manicuriaypedicuria.html">Manicuría y
+                                        Pedicuría</a></li>
+                                <li><a class="dropdown-item" href="../pages/maquillaje.html">Maquillaje</a></li>
+                                <li><a class="dropdown-item" href="../pages/lifting.html">Lifting de Pestañas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <div>
-        <h2 class="mainTitle">Lifting de pestañas</h2>
-    </div>
-    
-    <main>
-        <section class="box">
-            <div class="box1">
-                <div>
-                    <h3 class=boxTitle>¿Qué es?</h3>
-                    <p class="boxText">El lifting de pestañas es un tratamiento que ayuda a <strong>levantar, extender y alargar</strong> tus
-                        pestañas, en forma natural. El resultado varía dependiendo de la pestaña de cada persona.
-                        Tras el lifting, las pestañas naturales parecerán visiblemente más densas y largas sin necesidad de recurrir
-                        a extensiones, crea un efecto de mayor longitud y espesor llegando a todos los pelos incluso a los más
-                        cortitos.
-                        No necesita de un mantenimiento especial en casa, solo cuidado de no maquillarlas y mojarlas dentro de las
-                        24hs posteriores al tratamiento.
-                    </p>
+    <main class="container">
+        <div>
+            <h2 class="mainTitle">Lifting de pestañas</h2>
+        </div>
+        
+        <section>
+            <div class="card mb-5" style="max-width: 1000px;">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">¿Qué es?</h5>
+                      <p class="card-text">El lifting de pestañas es un tratamiento que ayuda a <strong>levantar, extender y alargar</strong> tus
+                        pestañas, en forma natural. El resultado varía dependiendo de la pestaña de cada persona.</p>
+                        <p>
+                            Tras el lifting, las pestañas naturales parecerán visiblemente más densas y largas sin necesidad de recurrir
+                            a extensiones, crea un efecto de mayor longitud y espesor llegando a todos los pelos incluso a los más
+                            cortitos.
+                        </p>
+                        <p>No necesita de un mantenimiento especial en casa, solo cuidado de no maquillarlas y mojarlas dentro de las
+                        24hs posteriores al tratamiento
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="../assets/images/lifting.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
                 </div>
-
-                <img class="boxImg" src="../assets/images/pestañas.png" alt="Perfilado de cejas y lifting">
-            </div>
-
-            <div class="box1">
-                <img class="boxImg" src="../assets/images/pestañas2.png" alt="Lifting de pestañas">
-
-                <div>
-                    <h3 class=boxTitle>¿Cómo es el procedimiento?</h3>
-                    <p class="boxText">El procedimiento consiste en mantener los ojos cerrados, se elegirá la almohadilla de silicona
+                
+              </div>
+              <div class="card mb-5" style="max-width: 1000px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../assets/images/lifting-tecnica.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">¿Cómo es el procedimiento?</h5>
+                      <p class="card-text">El procedimiento consiste en mantener los ojos cerrados, se elegirá la almohadilla de silicona
                         que más se adecue sus pestañas, y se procederá a levantar las pestañas hacia arriba con la ayuda de un
                         pincel y
-                        un adhesivo. Una vez se encuentren todas las pestañas de ambos ojos adheridas a la silicona, se aplica
+                        un adhesivo.</p> 
+                        <p>Una vez se encuentren todas las pestañas de ambos ojos adheridas a la silicona, se aplica
                         el permanente por el tiempo que corresponda, se limpia y se aplica el fijador por el mismo tiempo. Se aplica
                         el tinte de pestañas y por último el nutritivo. Se Limpia y retira cuidadosamente la
                         silicona con la ayuda de un limpiador y ¡Listo, tus pestañas mirarán hacia el cielo por más de 8
-                        semanas!
-                    </p>
-                </div>                
+                        semanas!</p>
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+                      
+            <div class="button d-grid gap-2 col-4 col-md-2 mx-auto">
+                <a href="../index.html">Volver al Inicio</a>
             </div>
         </section>
-    
-        <div class="button">
-            <a href="../index.html">Volver al Inicio</a>
-        </div>
     </main>
     
-    <footer>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/tiendadebellezaok/" target="_blank" title="Ir a Instagram">
-                <img src="../assets/images/instagram.png" alt="instagram"></a>
-            </li>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="text-muted">© 2022 Sol Rege</span>
+        </div>
 
-            <li>
-                <a href="mailto:tiendadebelleza@gmail.com" target="_blank" title="Mandar Email">
-                <img src="../assets/images/gmail.png" alt="gmail"></a>
-            </li>
-
-            <li>
-                <a href="https://wa.me/+5491130303030/?text=¡Hola! Estoy interesada en tus servicios" target="_blank"
-                title="Mandar Whatsapp">
-                <img src="../assets/images/whatsapp.png" alt="whatsapp"></a>
-            </li>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-2">
+            <li class="ms-3"><a class="text-muted" href="mailto:tiendadebelleza@gmail.com"><i
+                        class="fa-solid fa-envelope"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/tiendadebellezaok/"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted"
+                    href="https://wa.me/+5491130303030/?text=¡Hola! Estoy interesada en tus servicios" target="_blank"
+                    title="Mandar Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

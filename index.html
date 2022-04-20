@@ -5,102 +5,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7804516940.js" crossorigin="anonymous"></script>
+
+
     <title>Tienda de Belleza</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="headerLogo">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="Logo Tienda de Belleza">
-            </a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
 
-        <div class="headerTitle">
-            <h1 class="headerTitle1">Tienda de Belleza</h1>
-            <h2 class="headerTitle2">Estética Integral</h2>
-        </div>
-
-        <nav class="headerNav">
-            <ul>
-                <li><a href="index.html"> Inicio</a></li>
-                <li><a href="pages/sobremi.html"> Sobre mí</a></li>
-                <li><a href="pages/servicios.html">Servicios</a>
-                    <ul>
-                        <li><a href="pages/tratamientosfaciales.html">Tratamientos faciales</a></li>
-                        <li><a href="pages/lifting.html">Lifting de pestañas</a></li>
-                        <li><a href="pages/maquillaje.html">Maquillaje</a></li>
-                        <li><a href="pages/manicuriaypedicuria.html">Manicuría y pedicuría</a></li>
+            
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="./assets/images/logo.png" alt="Logo Tienda de belleza"
+                        class="d-inline-block align-text-top">
+                        <div>Tienda de Belleza</div>
+                </a>
+                
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobremi.html">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/tratamientosfaciales.html">Tratamientos
+                                        Faciales</a></li>
+                                <li><a class="dropdown-item" href="./pages/manicuriaypedicuria.html">Manicuría y
+                                        Pedicuría</a></li>
+                                <li><a class="dropdown-item" href="./pages/maquillaje.html">Maquillaje</a></li>
+                                <li><a class="dropdown-item" href="./pages/lifting.html">Lifting de Pestañas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <div class="slider">
-            <img src="assets/images/facial.jpeg" alt="Tratamiento facial">
-            <img src="assets/images/Esmaltado.jpeg" alt="Esmaltado semipermanente">
-            <img src="assets/images/maquillaje.jpeg" alt="Maquillaje">
-            <img src="assets/images/pestañas3.png" alt="Lifting">
-            
+    <main class="container">
+        <div class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/facial.jpg" class="d-block w-100" alt="humectacion facial">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/semipermanentes.jpg" class="d-block w-100"
+                        alt="manos con esmaltado semipermanente">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/liftingpestanas.png" class="d-block w-100" alt="lifting de pestanas">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/maquillaje-novia.jpg" class="d-block w-100" alt="maquillaje de novia">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/semipies.jpg" class="d-block w-100"
+                        alt="pies con esmaltado semipermanente">
+                </div>
+            </div>
         </div>
 
-        <section class="container">
-            <div class="containerTitle">
-                <h3>Verse y sentirse bien es posible</h3>
+        <section class="phrase">
+            <div class="title">
+                <p>Verse y sentirse bien es posible</p>
             </div>
 
-            <div class="containerText">
-                <p>En Tienda de Belleza nos enfocamos en la atención personalizada.
-                        El objetivo es llevar a cabo un tratamiento con el compromiso en resultados reales.
-                        Cada paciente es un desafio y un tratamiento diferente.</p>
+            <div>
+                <p class="text">En Tienda de Belleza nos enfocamos en la atención personalizada.
+                    El objetivo es llevar a cabo un tratamiento con el compromiso en resultados reales.
+                    Cada paciente es un desafio y un tratamiento diferente.</p>
             </div>
-            
-            <div class="pages">
-                <div class="page">
-                    <a href="pages/sobremi.html" class="pagesAbout">
-                        <h3>Sobre Mí</h3>
-                        <img src="assets/images/maquillajebyn.png" alt="Sobre Mí">
-                    </a>
-                </div>
-                <div class="page">
-                    <a href="pages/servicios.html" class="pagesServices">
-                        <h3>Servicios</h3><img src="assets/images/esmaltado.jpeg" alt="Servicios">
-                    </a>
-                </div>
-                <div class="page">
-                    <a href="pages/contacto.html" class="pagesContact">
-                        <h3>Contacto</h3>
-                        <img src="assets/images/peinado.jpg" alt="Sobre Mí">
-                    </a>
-                </div>
+
+        </section>
+        <section class="row pages">
+            <div class="col-md page">
+                <a href="pages/sobremi.html" class="pagesAbout">
+                    <h3>Sobre Mí</h3>
+                    <img src="assets/images/maquillajebyn.png" alt="Sobre Mí">
+                </a>
+            </div>
+            <div class="col-md page">
+                <a href="pages/servicios.html" class="pagesServices">
+                    <h3>Servicios</h3><img src="assets/images/esmaltado.jpeg" alt="Servicios">
+                </a>
+            </div>
+            <div class="col-md page">
+                <a href="pages/contacto.html" class="pagesContact">
+                    <h3>Contacto</h3>
+                    <img src="assets/images/peinado.jpg" alt="Sobre Mí">
+                </a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/tiendadebellezaok/" target="_blank" title="Ir a Instagram">
-                    <img src="assets/images/instagram.png" alt="instagram"></a>
-            </li>
 
-            <li>
-                <a href="mailto:tiendadebelleza@gmail.com" target="_blank" title="Mandar Email">
-                    <img src="assets/images/gmail.png" alt="gmail"></a>
-            </li>
 
-            <li>
-                <a href="https://wa.me/+5491130303030/?text=¡Hola! Estoy interesada en tus servicios" target="_blank"
-                    title="Mandar Whatsapp">
-                    <img src="assets/images/whatsapp.png" alt="whatsapp"></a>
-            </li>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="text-muted">© 2022 Sol Rege</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-2">
+            <li class="ms-3"><a class="text-muted" href="mailto:tiendadebelleza@gmail.com"><i
+                        class="fa-solid fa-envelope"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/tiendadebellezaok/"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted"
+                    href="https://wa.me/+5491130303030/?text=¡Hola! Estoy interesada en tus servicios" target="_blank"
+                    title="Mandar Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
         </ul>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
