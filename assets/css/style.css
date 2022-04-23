@@ -106,12 +106,23 @@ src: url("../fonts/Montserrat-VariableFont_wght.ttf");
     flex: 33%;
     max-width: 33%;
     padding: 0 4px;
-  }
+}
   
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  
+}
+	
+.column img:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+  
 }
 
 .card-title{
