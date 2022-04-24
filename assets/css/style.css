@@ -106,6 +106,7 @@ src: url("../fonts/Montserrat-VariableFont_wght.ttf");
     flex: 33%;
     max-width: 33%;
     padding: 0 4px;
+    
 }
   
 .column img {
@@ -123,6 +124,9 @@ src: url("../fonts/Montserrat-VariableFont_wght.ttf");
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
   
+}
+.card{
+    margin: auto;
 }
 
 .card-title{
