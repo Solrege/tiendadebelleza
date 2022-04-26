@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;    
+    font-family: "Monserrat";
+    }
+    
+    @font-face{
+    font-family: "Monserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+    }
+    
+    $color-bg-gradiente: #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%;
+    $color-bg-strong: #FFB3B5;
+    $color-bg-soft: #fad0c4;
+    
+    .logo{
+        width: 70%;
+    }
+    
+    .navbar {
+        background-image: linear-gradient(45deg, $color-bg-gradiente);
+        
+    }
+    
+    .navbar-brand {    
+        margin-left: 1em;
+        text-align: center;
+    }
+    
+    .dropdown-menu{
+        font-size: 90%;
+        background-color: $color-bg-soft;
+    }
+    
+    .carousel {
+        margin: 5%
+    }
+    
+    .phrase{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .title{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    
+    .pages{
+        .page{
+            border: 1px gray solid;
+            border-radius: 1em;
+            overflow: hidden;
+            margin-top: 1em;
+            padding: 0;
+        }
+    
+        a {
+            text-decoration: none;   
+            
+            &:visited {
+                text-decoration: none;    
+            }
+        }
+    
+        h3 {
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+            color: black ;
+            background-color: $color-bg-strong;
+            padding: 0.4em 0.2em;
+            margin-bottom: 0;
+        }
+    
+        h4 {
+            font-weight: bold;
+            text-align: center;
+            font-size: 110%;
+            color: black ;
+            background-color: $color-bg-strong;
+            padding: 0.4em 0.2em;
+            margin-bottom: 0;
+        }
+    
+        img {
+        display: block;
+        width: 100%; 
+        }
+    }
+    
+    .mainTitle {
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-bottom: 1em;
+        border-bottom: 2px solid grey;
+        margin-bottom: 1em;
+    }
+    
+    .containerText {
+        text-align: justify;
+        margin: 1em;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+    .column {
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
+      
+        img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;     
+            
+            &:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);            
+            }
+        }        
+    }
+
+    .card{
+        margin: auto;
+    }
+    
+    .card-title{
+        text-align: center;    
+    }
+
+    .card-text{
+        text-align: justify;
+    }
+    
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 3em; 
+    }
+    
+    .form{
+        background-color: rgb(199, 199, 199);
+        margin-left: 3.5em ;
+        padding: 1em;
+        border-radius: 1em;
+        text-align: center;
+        font-size: 80%;
+        width: 75%;
+    }
+    
+    .formTitle{
+        text-align: center;
+        padding-bottom: 1em;    
+    }
+    
+    .formForm {
+        label {
+            display: block;
+            padding: 0.5em;
+        }
+        
+        input{
+            border-style: none;
+            border-radius: 0.3em;
+            padding: 0.5em;
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        
+        textarea{
+            border-style: none;
+            border-radius: 0.3em;
+            padding: 0.2em;
+        }
+    }
+    
+    .mapTitle {
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+    
+    .map iframe{
+        width: 90%;
+        margin-bottom: 2em;
+        padding-left: 2em;    
+    }
+    
+    .contactInfo{
+        padding-left: 1.5em;
+        padding-right: 1em;
+        font-size: 80%;
+        width: 90%;
+        line-height: 2em;
+
+        a{
+        text-decoration: none;
+        color: black;
+
+            &:visited{
+                text-decoration: none;
+            } 
+        }         
+    }   
+    
+    .btn{
+        background-color: $color-bg-soft;
+        margin: 0.5em;
+    }
+    
+    .button{
+        display: inline;
+        text-align: center;
+        font-weight: bold;
+        border: solid 0.5px grey; 
+        background-color: $color-bg-strong;
+        padding: 1em;
+        border-radius: 1em;  
+        font-size: 60%;
+        margin-top: 5em;  
+
+        a{
+        text-decoration: none;
+        color: rgb(59, 59, 59);
+
+            &:visited{
+            text-decoration: none;
+            }  
+        }        
+    }
+    
+    footer {
+        background-image: linear-gradient(-45deg, $color-bg-gradiente);
+    }
+    
+    @media screen and (min-width: 768px){
+        .pages .page{
+            margin: 1em;
+        }
+    
+        .contact{
+            display: grid;
+            grid-template-columns: 1fr 0.5Fr; 
+            grid-template-rows: 45% 1fr;
+            margin: auto;  
+            max-width: 1200px;                                         
+        }
+    
+        .contactInfo{
+            grid-column: 1/2;
+            font-size: 100%; 
+            padding: 2em;             
+        }
+        
+        .map{
+            grid-column: 1/2;        
+        }    
+    
+        .mapTitle{
+            text-align: left;
+            padding-left: 2em;        
+        }
+        
+        .map iframe {
+            height: 80%;        
+        }
+    
+        .form{
+            grid-column: 2/3;
+            grid-row: 1/3;
+            margin: 1em;
+            padding: 1em;       
+        }
+    
+        .formForm textarea{
+            width: 100%;        
+        }        
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .dropdown-item:hover{
+            background-color: $color-bg-strong ;
+        }
+    
+        .nav-item{
+            font-size: 150%;
+            margin: 0.5em;
+        }
+    
+        .nav-item:hover{
+            background-color: $color-bg-strong ;
+        }
+    
+        .title{
+            font-size: 200%;
+            font-weight: bold;
+        }
+    
+        .text{
+            font-size: 120%;
+        }
+    
+        .card-title{
+            font-size: 150%;
+            margin: 1em;    
+        }
+    }
