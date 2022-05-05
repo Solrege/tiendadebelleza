@@ -6,6 +6,41 @@
   font-family: "Monserrat";
   src: url("../fonts/Montserrat-VariableFont_wght.ttf"); }
 
+.title, .title3, .title4 {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  background-color: #FFB3B5;
+  padding: 0.4em 0.2em;
+  margin-bottom: 0; }
+
+.title3 {
+  font-size: 110%; }
+
+.title4 {
+  font-size: 80%; }
+
+@media screen and (min-width: 1024px) {
+  .title, .title3, .title4 {
+    font-size: 150%; } }
+
+.frase {
+  font-size: 180%;
+  font-weight: bold; }
+
+.text {
+  font-size: 120%;
+  font-weight: normal; }
+
+.btn--whatsapp i:before {
+  color: #00BB2D; }
+
+.btn--instagram i:before {
+  color: #3F729B; }
+
+.btn--send-mail i:before {
+  color: #c23c30; }
+
 .logo {
   width: 70%; }
 
@@ -27,10 +62,6 @@
   text-align: center;
   margin-bottom: 5%; }
 
-.title {
-  font-size: 120%;
-  font-weight: bold; }
-
 .pages .page {
   border: 1px gray solid;
   border-radius: 1em;
@@ -42,24 +73,6 @@
   text-decoration: none; }
   .pages a:visited {
     text-decoration: none; }
-
-.pages h3 {
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.5em;
-  color: black;
-  background-color: #FFB3B5;
-  padding: 0.4em 0.2em;
-  margin-bottom: 0; }
-
-.pages h4 {
-  font-weight: bold;
-  text-align: center;
-  font-size: 110%;
-  color: black;
-  background-color: #FFB3B5;
-  padding: 0.4em 0.2em;
-  margin-bottom: 0; }
 
 .pages img {
   display: block;
@@ -222,11 +235,6 @@ footer {
     margin: 0.5em; }
   .nav-item:hover {
     background-color: #FFB3B5; }
-  .title {
-    font-size: 200%;
-    font-weight: bold; }
-  .text {
-    font-size: 120%; }
   .card-title {
     font-size: 150%;
     margin: 1em; } }

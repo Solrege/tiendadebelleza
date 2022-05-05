@@ -1,0 +1,12 @@
+$colors: (
+ whatsapp: #00BB2D,
+ instagram:  #3F729B,
+ send-mail: #c23c30
+);
+
+@each $name-color, $color in $colors {
+   .btn--#{$name-color} i:before {
+       color: $color;
+   }
+}
+

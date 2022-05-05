@@ -1,0 +1,12 @@
+@mixin fontSize ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;    
+}
+
+.frase{
+    @include fontSize(180%, bold )
+}
+
+.text{
+    @include fontSize(120%, normal )
+}

@@ -7,10 +7,14 @@
     font-family: "Monserrat";
     src: url("../fonts/Montserrat-VariableFont_wght.ttf");
     }
-    
+
     $color-bg-gradiente: #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%;
     $color-bg-strong: #FFB3B5;
     $color-bg-soft: #fad0c4;
+
+    @import "../scss/titulos";   
+    @import "../scss/mixins";
+    @import "../scss/maps";
     
     .logo{
         width: 70%;
@@ -40,11 +44,6 @@
         margin-bottom: 5%;
     }
     
-    .title{
-        font-size: 120%;
-        font-weight: bold;
-    }
-    
     .pages{
         .page{
             border: 1px gray solid;
@@ -60,27 +59,7 @@
             &:visited {
                 text-decoration: none;    
             }
-        }
-    
-        h3 {
-            font-weight: bold;
-            text-align: center;
-            font-size: 1.5em;
-            color: black ;
-            background-color: $color-bg-strong;
-            padding: 0.4em 0.2em;
-            margin-bottom: 0;
-        }
-    
-        h4 {
-            font-weight: bold;
-            text-align: center;
-            font-size: 110%;
-            color: black ;
-            background-color: $color-bg-strong;
-            padding: 0.4em 0.2em;
-            margin-bottom: 0;
-        }
+        }        
     
         img {
         display: block;
@@ -298,15 +277,6 @@
     
         .nav-item:hover{
             background-color: $color-bg-strong ;
-        }
-    
-        .title{
-            font-size: 200%;
-            font-weight: bold;
-        }
-    
-        .text{
-            font-size: 120%;
         }
     
         .card-title{
